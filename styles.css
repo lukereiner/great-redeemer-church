@@ -1,4 +1,8 @@
 /* --- INDEX --- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
     color: white;
@@ -48,13 +52,13 @@ body {
 
 
 /* FOOTER */
-.footer {
-    position: fixed;
+/*.footer {
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-}
+}*/
 
 /* --- ABOUT --- */
 
@@ -128,7 +132,180 @@ body {
     margin-right: auto;
 }
 
-/* --- EVENTS --- */
+/* --- EVENTS/GROUPS --- */
+.groups {
+    display: flex;
+    flex-direction: column;
+}
 
+.groups h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    margin: 10px;
+}
 
-/* --- GROUPS --- */
+.book-study {
+    display: flex;
+    width: 75%;
+    max-width: 720px;
+    align-items: center;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+.book-study-img h2 {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.book-study-img img {
+    margin: 4px auto;
+}
+
+.book-study-txt {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .book-study {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .book-study-img img {
+        display: flex;
+    }
+}
+
+.table-talk {
+    display: flex;
+    width: 75%;
+    max-width: 720px;
+    align-items: center;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+.table-talk-img h2 {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.table-talk-img img {
+    margin: 4px auto;
+}
+
+.table-talk-txt {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .table-talk {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .table-talk-img img {
+        display: flex;
+    }
+}
+
+.bible-class {
+    display: flex;
+    width: 75%;
+    max-width: 720px;
+    align-items: center;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+.bible-class-img h2 {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.bible-class-img img {
+    margin: 4px auto;
+}
+
+.bible-class-txt {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .bible-class {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bible-class-img img {
+        display: flex;
+    }
+}
+
+.prayer-group {
+    display: flex;
+    width: 75%;
+    max-width: 720px;
+    align-items: center;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+.prayer-group-img h2 {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.prayer-group-img img {
+    margin: 4px auto;
+}
+
+.prayer-group-txt {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .prayer-group {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .prayer-group-img img {
+        display: flex;
+    }
+}
+
+.qa-night {
+    display: flex;
+    width: 75%;
+    max-width: 720px;
+    align-items: center;
+    margin: 20px auto;
+    gap: 25px;
+}
+
+.qa-night-img h2 {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.qa-night-img img {
+    margin: 4px auto;
+}
+
+.qa-night-txt {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .qa-night {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .qa-night-img img {
+        display: flex;
+    }
+}

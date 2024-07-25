@@ -1,12 +1,17 @@
 /* --- INDEX --- */
+@font-face {
+    font-family: myfont;
+    src: url("/font/Montserrat/Montserrat-Regular.ttf");
+};
+
 * {
     box-sizing: border-box;
+    font-family: myfont;
 }
 
 body {
     background-color: black;
     color: white;
-    font-family: sans-serif;
 }
 
 .title {
@@ -140,8 +145,7 @@ body {
 
 .groups h1 {
     text-align: center;
-    text-decoration: underline;
-    font-size: 40px;
+    font-size: 3em;
     margin: 10px;
 }
 

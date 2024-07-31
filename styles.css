@@ -12,6 +12,7 @@ html {
 body {
     background-color: black;
     color: white;
+    margin: 0%;
 }
 
 /* --- INDEX --- */
@@ -50,7 +51,9 @@ body {
 }
 
 .worship {
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .worship-title {
@@ -65,94 +68,158 @@ body {
 }
 
 .worship-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
+   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .worship-wrap {
-        display: block;
-    }
-}
-
-.worship-1 {
-    display: flex;
-    width: 25%;
-    max-width: 280px;
-    flex-direction: column;
-    justify-content: center;
+.worship-txt {
     font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
-    .worship-1 {
+    .worship-txt {
         font-size: 16px;
         max-width: 100%;
         width: 100%;   
     }
 }
 
-.worship-1 p {
-    text-align: left;
+.worship-button button {
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    padding: 4px 8px;
+}
+
+.worship-button button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.new {
+    background-color: white;
+    color: black;
+}
+
+.new-wrap {
+    text-align: center;
+}
+
+.new-title {
+    font-size: calc(24px + 0.5vw);
 }
 
 @media screen and (max-width: 768px) {
-    .worship-1 p {
-        margin-bottom: 2px;
-        text-align: center;
+    .new-title {
+        font-size: 16px;
     }
 }
 
-.worship-2 {
-    display: flex;
-    width: 25%;
-    max-width: 260px;
-    flex-direction: column;
-    justify-content: center;
+.new-txt {
     font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
-    .worship-2 {
-        font-size: 18px;
-        max-width: 360px;
-        width: 100%;
-        flex-direction: row;
-        margin-top: 35px;
+    .new-txt {
+        font-size: 16px;
+        max-width: 100%;
+        width: 100%;   
     }
 }
 
-.worship-2 p {
+.new-button button {
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    padding: 4px 8px;
+}
+
+.new-button button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.involve-wrap {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-    .worship-2 p {
-        margin-top: 50px;
-        font-weight: bold;
-        text-align: left;
-        width: 50%;
-        margin: auto;
-    }
-}
-
-.stream-button {
-    margin: 0 auto;
+.involve-title {
+    font-size: calc(24px + 0.5vw);
 }
 
 @media screen and (max-width: 768px) {
-    .stream-button {
-        margin: auto;
+    .involve-title {
+        font-size: 16px;
     }
 }
 
+.involve-txt {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 768px) {
-    .worship-2 img {
-        height: 65px;
+    .involve-txt {
+        font-size: 16px; 
     }
 }
+
+.involve-button button {
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    padding: 4px 8px;
+}
+
+.involve-button button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.update {
+    background-color: white;
+    color: black;
+}
+
+.update-wrap {
+    text-align: center;
+}
+
+.update-title {
+    font-size: calc(24px + 0.5vw);
+}
+
+@media screen and (max-width: 768px) {
+    .update-title {
+        font-size: 16px;
+    }
+}
+
+.update-txt {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .update-txt {
+        font-size: 16px; 
+    }
+}
+
+.update-button button {
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    padding: 4px 8px;
+}
+
+.update-button button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
 
 /* HAMBURGER & NAVBAR */
 /* [ON BIG SCREEN] */
@@ -270,7 +337,7 @@ body {
     margin: 0 auto;
 }
 
-.worship-txt h2 {
+.worship-about-txt h2 {
     font-size: 28px;
 }
 
@@ -281,7 +348,7 @@ body {
     margin: 0 auto;
 }
 
-.worship-txt p {
+.worship-about-txt p {
     line-height: 1.5;
 }
 
@@ -355,64 +422,113 @@ body {
 /* --- CONTACT --- */
 .contact-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 24px;
 }
 
 .contact-wrap {
     display: flex;
     justify-content: center;
-    max-width: 1280px;
+    flex-direction: column;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
 .contact-email {
-    display: block;
-    flex-basis: 33%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 90px;
 }
 
 .contact-email h2 {
     text-align: center;
-    font-size: xx-large;
-    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.contact-email img {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
 }
 
 .contact-email-church {
     text-align: center;
+    margin-bottom: 40px;
+    line-height: 0.5;
 }
 
 .contact-email-pastor {
     text-align: center;
-}
-
-.contact-social-media {
-    display: block;
-    flex-basis: 33%;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.contact-social-media-link img {
-    margin: auto 15px;
-    vertical-align: middle;
+    line-height: 0.5;
 }
 
 .contact-social-media h2 {
     text-align: center;
-    font-size: xx-large;
+    font-size: 32px;
 }
 
-.contact-map {
-    display: block;
-    flex-basis: 33%;
+.contact-social-media-fb {
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.fb-img {
+    width: 150px;
+}
+
+.fb-img img {
+    margin: 7px;
+    height: 70px;
+}
+
+.fb-txt button {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.fb-txt {
+    max-width: 250px;
+}
+
+.contact-social-media-yt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.yt-img {
+    width: 150px;
+}
+
+.yt-img img {
+    height: 85px;
+}
+
+.yt-txt {
+    max-width: 250px;
+}
+
+.yt-txt button {
+    display: block;
+    margin: 0 auto;
 }
 
 .contact-map h2 {
     text-align: center;
     font-size: xx-large;
+}
+
+.contact-map img {
+    height: 80px;
 }
 
 .contact-map iframe {

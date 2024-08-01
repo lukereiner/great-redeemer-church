@@ -273,7 +273,6 @@ body {
 /* FOOTER */
 .footer {
     position: absolute;
-    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -420,9 +419,10 @@ body {
 }
 
 /* --- CONTACT --- */
-.contact-title {
+.contact-title h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 1.5;
 }
 
 .contact-wrap {
@@ -437,19 +437,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 70px;
 }
 
-.contact-email h2 {
+@media screen and (max-width: 768px) {
+    .contact-email {
+        display: block;
+    }
+}
+
+.contact-email-title h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 0;
 }
 
-.contact-email img {
+.contact-email-title img {
     display: block;
     margin: 0 auto;
     height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-email-title h2 {
+        font-size: 28px;
+    }
+
+    .contact-email-title img {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-email-emails {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .contact-email-church {
@@ -458,14 +481,46 @@ body {
     line-height: 0.5;
 }
 
+.contact-email-church p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-email-church p {
+        font-size: 16px;
+    }
+}
+
 .contact-email-pastor {
     text-align: center;
     line-height: 0.5;
 }
 
+.contact-email-pastor p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-email-pastor p {
+        font-size: 16px;
+    }
+}
+
+.contact-social-media {
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
 .contact-social-media h2 {
     text-align: center;
     font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-social-media h2 {
+        font-size: 28px;
+    }
 }
 
 .contact-social-media-fb {
@@ -475,18 +530,68 @@ body {
     font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-social-media-fb {
+        flex-direction: column;
+    }
+}
+
 .fb-img {
     width: 150px;
 }
 
-.fb-img img {
-    margin: 7px;
-    height: 70px;
+@media screen and (max-width: 768px) {
+    .fb-img {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
 }
+
+.fb-img img {
+    margin-left: 7px;
+    height: 70px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .fb-img img {
+        height: 60px;
+        margin-left: 0;
+    }
+}
+
 
 .fb-txt button {
     display: block;
     margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.fb-txt button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .contact a {
@@ -497,29 +602,108 @@ body {
     max-width: 250px;
 }
 
+@media screen and (max-width: 768px) {
+    .fb-txt {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .fb-txt p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0px 12px;
+    }
+}
+
 .contact-social-media-yt {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-social-media-yt {
+        flex-direction: column;
+    }
 }
 
 .yt-img {
     width: 150px;
 }
 
+@media screen and (max-width: 768px) {
+    .yt-img {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+}
+
 .yt-img img {
     height: 85px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .yt-img img {
+        height: 73px;
+    }
 }
 
 .yt-txt {
     max-width: 250px;
 }
 
+@media screen and (max-width: 768px) {
+    .yt-txt {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .yt-txt p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0px 12px;
+    }
+}
+
 .yt-txt button {
     display: block;
     margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.yt-txt button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .contact-map h2 {
@@ -537,16 +721,16 @@ body {
     margin-right: auto;
 }
 
-/* --- EVENTS/GROUPS --- */
+/* --- GROUPS --- */
 .groups {
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
 }
 
-.groups h1 {
+.groups h2 {
     text-align: center;
-    font-size: 3em;
-    margin: 10px;
+    font-size: 32px;
 }
 
 .book-study {
@@ -559,6 +743,8 @@ body {
 }
 
 .book-study-img h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 4px auto;
     text-align: center;
 }
@@ -568,7 +754,7 @@ body {
 }
 
 .book-study-txt {
-    font-size: 1.1em;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
@@ -579,6 +765,10 @@ body {
 
     .book-study-img img {
         display: flex;
+    }
+
+    .book-study-txt p {
+        font-size: 16px;
     }
 }
 
@@ -592,6 +782,8 @@ body {
 }
 
 .table-talk-img h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 4px auto;
     text-align: center;
 }
@@ -613,6 +805,10 @@ body {
     .table-talk-img img {
         display: flex;
     }
+
+    .table-talk-txt p {
+        font-size: 16px;
+    }
 }
 
 .bible-class {
@@ -625,6 +821,8 @@ body {
 }
 
 .bible-class-img h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 4px auto;
     text-align: center;
 }
@@ -646,6 +844,10 @@ body {
     .bible-class-img img {
         display: flex;
     }
+
+    .bible-class-txt p {
+        font-size: 16px;
+    }
 }
 
 .prayer-group {
@@ -658,6 +860,8 @@ body {
 }
 
 .prayer-group-img h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 4px auto;
     text-align: center;
 }
@@ -679,6 +883,10 @@ body {
     .prayer-group-img img {
         display: flex;
     }
+
+    .prayer-group-txt p {
+        font-size: 16px;
+    }
 }
 
 .qa-night {
@@ -691,6 +899,8 @@ body {
 }
 
 .qa-night-img h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 4px auto;
     text-align: center;
 }
@@ -712,4 +922,39 @@ body {
     .qa-night-img img {
         display: flex;
     }
+
+    .qa-night-txt p {
+        font-size: 16px;
+    }
+}
+
+/* --- EVENTS --- */
+.events-title h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .events-title h2 {
+        font-size: 24px;
+    }
+}
+.calendar {
+    vertical-align: middle;
+}
+
+.responsive-cal {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-cal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

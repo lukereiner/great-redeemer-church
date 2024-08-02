@@ -15,6 +15,10 @@ body {
     margin: 0%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* --- INDEX --- */
 .title {
     position: relative;
@@ -54,11 +58,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 1.5;
+    margin-bottom: 70px;
+    padding: 0px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .worship {
+        margin-bottom: 120px;
+        padding: 0px 64px;
+    }
 }
 
 .worship-title {
-    text-align: center;
+    display: block;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
     font-size: calc(24px + 0.5vw);
+}
+
+.worship-title img {
+    display: flex;
+    height: 60px;
+    margin-left: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -84,21 +107,55 @@ body {
 }
 
 .worship-button button {
-    font-size: 20px;
-    border-radius: 8px;
-    transition-duration: 0.3s;
-    padding: 4px 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .worship-button button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
     background-color: black;
     color: white;
-    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .worship-button button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
 }
 
 .new {
-    background-color: white;
-    color: black;
+    line-height: 1.5;
+    margin-bottom: 70px;
+    padding: 0px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .new {
+        margin-bottom: 120px;
+        padding: 0px 64px;
+    }
 }
 
 .new-wrap {
@@ -106,7 +163,18 @@ body {
 }
 
 .new-title {
+    display: block;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
     font-size: calc(24px + 0.5vw);
+    
+}
+
+.new-title img {
+    display: flex;
+    height: 60px;
+    margin-left: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,16 +196,55 @@ body {
 }
 
 .new-button button {
-    font-size: 20px;
-    border-radius: 8px;
-    transition-duration: 0.3s;
-    padding: 4px 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .new-button button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
     background-color: black;
     color: white;
-    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .new-button button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}
+
+.involve {
+    line-height: 1.5;
+    margin-bottom: 70px;
+    padding: 0px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .involve {
+        margin-bottom: 120px;
+        padding: 0px 64px;
+    }
 }
 
 .involve-wrap {
@@ -145,7 +252,17 @@ body {
 }
 
 .involve-title {
+    display: block;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
     font-size: calc(24px + 0.5vw);
+}
+
+.involve-title img {
+    display: flex;
+    height: 60px;
+    margin-left: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -165,21 +282,55 @@ body {
 }
 
 .involve-button button {
-    font-size: 20px;
-    border-radius: 8px;
-    transition-duration: 0.3s;
-    padding: 4px 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .involve-button button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
     background-color: black;
     color: white;
-    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .involve-button button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
 }
 
 .update {
-    background-color: white;
-    color: black;
+    line-height: 1.5;
+    margin-bottom: 100px;
+    padding: 0px 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .update {
+        margin-bottom: 120px;
+        padding: 0px 64px;
+    }
 }
 
 .update-wrap {
@@ -187,7 +338,17 @@ body {
 }
 
 .update-title {
+    display: block;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
     font-size: calc(24px + 0.5vw);
+}
+
+.update-title img {
+    display: flex;
+    height: 60px;
+    margin-left: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -207,18 +368,43 @@ body {
 }
 
 .update-button button {
-    font-size: 20px;
-    border-radius: 8px;
-    transition-duration: 0.3s;
-    padding: 4px 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .update-button button:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    border: 2px solid white;
+    cursor: pointer;
     background-color: black;
     color: white;
-    cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .update-button button {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+}
 
 
 /* HAMBURGER & NAVBAR */
@@ -321,7 +507,9 @@ body {
     .history-img img {
         float: none;
         margin: 0 auto;
-        height: 300px;
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
     }
 
     .history-txt p {
@@ -352,7 +540,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .worship-txt h2 {
+    .worship-about-txt h2 {
         display: flex;
         justify-content: center;
     }
@@ -369,7 +557,7 @@ body {
         object-fit: cover;
     }
 
-    .worship-txt p {
+    .worship-about-txt p {
         font-size: 0.95em;
     }
 }
@@ -520,6 +708,7 @@ body {
 @media screen and (max-width: 768px) {
     .contact-social-media h2 {
         font-size: 28px;
+        padding: 0 8px;
     }
 }
 
@@ -592,10 +781,6 @@ body {
     cursor: pointer;
     background-color: black;
     color: white;
-}
-
-.contact a {
-    text-decoration: none;
 }
 
 .fb-txt {
@@ -896,6 +1081,7 @@ body {
     align-items: center;
     margin: 20px auto;
     gap: 25px;
+    margin-bottom: 100px;
 }
 
 .qa-night-img h2 {
@@ -911,6 +1097,7 @@ body {
 
 .qa-night-txt {
     font-size: 1.1em;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -932,6 +1119,7 @@ body {
 .events-title h2 {
     font-size: 32px;
     text-align: center;
+    margin-top: 32px;
 }
 
 @media screen and (max-width: 768px) {

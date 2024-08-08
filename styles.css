@@ -426,7 +426,10 @@ a {
     text-decoration: none;
     text-align: center;
   }
-  #hamitems a:hover { background: #031bfc; }
+  #hamitems a:hover { 
+    background: #ffffff;
+    color: black; 
+}
   
   /* (C) HIDE HAMBURGER */
   #hamnav label, #hamburger { display: none; }
@@ -444,8 +447,8 @@ a {
     /* (B) SHOW HAMBURGER ICON */
     #hamnav label { 
       display: inline-block; 
-      color: white;
-      background: #031bfc;
+      color: black;
+      background: #ffffff;
       font-style: normal;
       font-size: 1.2em;
       padding: 10px;
@@ -1096,8 +1099,7 @@ a {
 }
 
 .qa-night-txt {
-    font-size: 1.1em;
-    
+    font-size: 1.1em; 
 }
 
 @media screen and (max-width: 768px) {
